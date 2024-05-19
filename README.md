@@ -37,17 +37,17 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Languages</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Javascript</a></li>
-  <li><a href="https://www.ruby-lang.org/en/">HTML</a></li>
-  <li><a href="https://www.ruby-lang.org/en/">SASS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
+    <li><a href="https://sass-lang.com">SASS</a></li>
   </ul>
 </details>
 
 <details>
-<summary>CSS framework</summary>
+<summary>framework</summary>
   <ul>
+    <li><a href="https://reactjs.org/">React</a></li>
     <li><a href="https://www.postgresql.org/">Tailwind CSS</a></li>
   </ul>
 </details>
