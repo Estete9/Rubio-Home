@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  document.body.classList.add('debug-screens');
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -23,3 +25,4 @@ function App() {
 }
 
 export default App;
+
