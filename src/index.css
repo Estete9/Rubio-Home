@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+@font-face {
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  src:
+    url('./fonts/HelveticaNeueRoman.otf') format('opentype'),
+  }
+
+  body {
   margin: 0;
   font-family:
     -apple-system,

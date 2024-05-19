@@ -3,6 +3,10 @@ module.exports = {
   content: ['./src/*.{html,js,jsx}', './src/**/*.{html, js,jsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        helveticaNeue: ['HelveticaNeue', "sans-serif"],
+      },
+
       colors: {
         primary: '#d9ad26',
         secondary: '#d1d3d4',
@@ -13,3 +17,4 @@ module.exports = {
   },
   plugins: [require('tailwindcss-debug-screens')],
 };
+
