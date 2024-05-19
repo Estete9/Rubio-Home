@@ -141,7 +141,7 @@ You may also see any lint errors in the console.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add animations to the mobile menu]**
-- [ ] **[Improve SEO with keywords, title tags, and meta data]**
+- [ ] **[Improve SEO with keywords, title tags, and metadata]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
