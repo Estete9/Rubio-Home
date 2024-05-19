@@ -1,12 +1,120 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+<div align="center">
+  <h1><b>Jorge Rubio Taller de Publicidad Homepage</b></h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
 
-## Available Scripts
+# 📗 Table of Contents
 
-In the project directory, you can run:
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Where's the Money](#-recipe-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [Live Demo](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-### `npm start`
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Where's the Money <a name="about-project"></a>
+
+**Jorge Rubio Taller de Publicidad Homepage** Jorge Rubio Publicidad is a homepage where we showcase the company's services and history, giving special attention to details and design.
+
+## 🛠 Built With <a name="built-with"></a> 
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Javascript</a></li>
+  <li><a href="https://www.ruby-lang.org/en/">HTML</a></li>
+  <li><a href="https://www.ruby-lang.org/en/">SASS</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>CSS framework</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">Tailwind CSS</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- [Clean and simple design]
+- [Responsive layout]
+- [Mobile-first development]
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO  -->
+## 💻 Live Demo <a name="live-demo"></a>
+
+Check the live demo [UPDATE THIS](https://wheres-the-money.onrender.com)
+
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+To run this project you need:
+
+- VSCode
+- Node
+- Web Browser
+
+### Setup
+
+Clone this repository to your desired folder:
+
+Example commands:
+
+- With HTTPS:
+
+```bash
+  cd my-folder
+  git clone https://github.com/fmanimashaun/book-car.git
+```
+
+### Install
+
+Install this project's dependencies with:
+
+```bash
+  npm install
+```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+```bash
+ npm run start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +122,62 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build`
+<!-- AUTHORS -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 👥 Authors <a name="authors"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+👤 **Esteban Palacios**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- GitHub: [@Estete9](https://github.com/Estete9)
+- Twitter: [@NaughTban](https://twitter.com/NaughTban)
+- LinkedIn: [Esteban Palacios](https://www.linkedin.com/in/dev-esteban-palacios/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+<!-- FUTURE FEATURES -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔭 Future Features <a name="future-features"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] **[Add animations to the mobile menu]**
+- [ ] **[Improve SEO with keywords, title tags, and meta data]**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
+<!-- CONTRIBUTING -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing <a name="contributing"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](https://github.com/Estete9/rubio-home/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- SUPPORT -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⭐️ Show your support <a name="support"></a>
 
-### Making a Progressive Web App
+If you like this project comment or send it a star
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+<!-- ACKNOWLEDGEMENTS -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-### Deployment
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md)-licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
