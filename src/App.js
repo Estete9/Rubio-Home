@@ -1,13 +1,17 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
   document.body.classList.add('debug-screens');
+  document.body.classList.add('h-screen');
 
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <header className="h-12 bg-secondary flex justify-between px-5">
+        <Header />
+      </header>
+      <main>this is the main</main>
+    </>
   );
 }
 

@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/*.{html,js,jsx}', './src/**/*.{html, js,jsx}'],
+  mode: 'jit',
+  purge: ['./src/*.{html,js,jsx}', './src/**/*.{html, js,jsx}', './public/index.html'],
+  content: ['./src/*.{html,js,jsx}', './src/**/*.{html, js,jsx}', './public/index.html'],
   theme: {
     extend: {
       fontFamily: {
-        helveticaNeue: ['HelveticaNeue', "sans-serif"],
+        helveticaNeue: ['HelveticaNeue', 'sans-serif'],
       },
 
       colors: {
@@ -17,4 +19,7 @@ module.exports = {
   },
   plugins: [require('tailwindcss-debug-screens')],
 };
+
+
+
 
