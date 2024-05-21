@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
@@ -7,10 +8,13 @@ function App() {
 
   return (
     <>
-      <header className="h-12 bg-secondary flex justify-between px-5">
+      <header className="h-12 bg-secondary flex justify-between px-3">
         <Header />
       </header>
-      <main>this is the main</main>
+      <main className="px-3">this is main section</main>
+      <footer className="px-3 bg-neutral">
+        <Footer />
+      </footer>
     </>
   );
 }
