@@ -12,7 +12,7 @@ function App() {
         <Header />
       </header>
       <main className="px-3">this is main section</main>
-      <footer className="px-3 bg-neutral">
+      <footer className="px-3 pb-3 bg-neutral">
         <Footer />
       </footer>
     </>

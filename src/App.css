@@ -1,7 +1,30 @@
-/* .main {
-  max-height: 48px;
-} */
+:root {
+  --primary-color: #d9ad26;
+  --secondary-color: #d1d3d4;
+  --accent-color: #ec1c24;
+  --neutral-color: #231f20;
+}
 
-/* .header-iso {
-  max-height: 3rem;
-} */
+.footer-content {
+  p {
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    margin-top: auto;
+  }
+
+  .copyright-icon {
+    font-size: 1rem;
+  }
+
+  li {
+    display: flex;
+    gap: 0.75rem;
+    min-height: 1.5rem;
+  }
+
+  img {
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-top: 0.25rem;
+  }
+}

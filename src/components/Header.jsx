@@ -4,7 +4,7 @@ import menu from '../assets/icons/menu.svg';
 
 const Header = () => (
   <>
-    <img className="header-iso my-3 ml-2" src={iso} alt="logo iso" />
+    <img className="header-iso ml-2 max-h-5 my-auto" src={iso} alt="logo iso" />
     <img className="header-text my-2" src={logoText} alt="logo text" />
     <img className="menu-btn my-3 mr-2" src={menu} alt="menu button" />
   </>
