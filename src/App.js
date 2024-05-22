@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Hero from './components/Hero';
 
 function App() {
   document.body.classList.add('debug-screens');
@@ -11,7 +12,9 @@ function App() {
       <header className="h-12 bg-secondary flex justify-between px-3">
         <Header />
       </header>
-      <main className="px-3">this is main section</main>
+      <main className="">
+        <Hero />
+      </main>
       <footer className="px-3 pb-3 bg-neutral">
         <Footer />
       </footer>
