@@ -3,12 +3,15 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Servicios from './components/Servicios';
+import Divider from './components/Divider';
 
 function App() {
-  document.body.classList.add('debug-screens');
-  // document.body.classList.add('h-screen');
-  document.body.classList.add('bg-[url(./assets/mobile/bg-img-mobile.png)]');
-  document.body.classList.add('bg-cover');
+  document.body.classList.add(
+    'debug-screens',
+    'bg-[url(./assets/mobile/bg-img-mobile.png)]',
+    'bg-cover',
+    'bg-fixed',
+  );
 
   return (
     <>
@@ -17,6 +20,7 @@ function App() {
       </header>
       <main className="">
         <Hero />
+        <Divider quote="Decididos al trabajo con excelencia" />
         <Servicios />
       </main>
       <footer className="px-3 pb-3 bg-neutral">
