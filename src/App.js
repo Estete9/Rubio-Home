@@ -9,6 +9,7 @@ function App() {
   document.body.classList.add(
     'debug-screens',
     'bg-[url(./assets/mobile/bg-img-mobile.png)]',
+    'bg-no-repeat',
     'bg-cover',
     'bg-fixed',
   );
@@ -20,8 +21,9 @@ function App() {
       </header>
       <main className="">
         <Hero />
-        <Divider quote="Decididos al trabajo con excelencia" />
+        <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
         <Servicios />
+        <Divider quote="'Decididos al trabajo con excelencia'" />
       </main>
       <footer className="px-3 pb-3 bg-neutral">
         <Footer />
