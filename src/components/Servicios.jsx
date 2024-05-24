@@ -17,7 +17,7 @@ const services = [
 const Servicios = () => (
   <section className="services-section relative">
     <img src={bgServicios} alt="Estación Primax" />
-    <div className="services-content w-screen flex flex-col items-center absolute top-[8%] left-0 gap-8 h-[45%]">
+    <div className="services-content w-screen flex flex-col items-center absolute top-[8%] left-0 gap-6 h-[45%]">
       <h1 className="services-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         SERVICIOS
       </h1>
