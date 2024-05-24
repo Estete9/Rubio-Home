@@ -6,7 +6,9 @@ import Servicios from './components/Servicios';
 
 function App() {
   document.body.classList.add('debug-screens');
-  document.body.classList.add('h-screen');
+  // document.body.classList.add('h-screen');
+  document.body.classList.add('bg-[url(./assets/mobile/bg-img-mobile.png)]');
+  document.body.classList.add('bg-cover');
 
   return (
     <>
