@@ -3,6 +3,10 @@
   --secondary-color: #d1d3d4;
   --accent-color: #ec1c24;
   --neutral-color: #231f20;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 .footer-content {

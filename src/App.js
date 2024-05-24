@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Servicios from './components/Servicios';
 
 function App() {
   document.body.classList.add('debug-screens');
@@ -14,6 +15,7 @@ function App() {
       </header>
       <main className="">
         <Hero />
+        <Servicios />
       </main>
       <footer className="px-3 pb-3 bg-neutral">
         <Footer />

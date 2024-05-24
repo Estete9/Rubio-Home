@@ -2,10 +2,10 @@ import bgHero from '../assets/mobile/hero-img-mobile.png';
 import heroLogo from '../assets/logos/Jorge Rubio Logo final-white.svg';
 
 const Hero = () => (
-  <section className="hero-section w-screen relative h-[80vh]">
-    <img src={bgHero} alt="Kia Matriz" className="w-screen z-0 absolute" />
-    <div className="hero-content absolute z-10 flex flex-col justify-center items-center w-full mt-28 gap-12">
-      <h1 className="text-secondary font-helveticaNeue font-light text-3xl mx-auto">
+  <section className="hero-section relative">
+    <img src={bgHero} alt="Kia Matriz" className="hero-bg" />
+    <div className="hero-content flex flex-col justify-center items-center gap-12 top-[15%] w-screen absolute">
+      <h1 className="hero-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         ...PIONEROS EN EL
         <br />
         ARTE DE ROTULACIÓN
