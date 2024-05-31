@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Servicios from './components/Servicios';
 import Divider from './components/Divider';
+import Nosotros from './components/Nosotros';
+import Agradecimientos from './components/Agradecimientos';
 
 function App() {
   document.body.classList.add(
@@ -24,6 +26,8 @@ function App() {
         <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
         <Servicios />
         <Divider quote="'Decididos al trabajo con excelencia'" />
+        <Nosotros />
+        <Agradecimientos />
       </main>
       <footer className="px-3 pb-3 bg-neutral">
         <Footer />
