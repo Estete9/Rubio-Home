@@ -32,3 +32,12 @@
     margin-top: 0.25rem;
   }
 }
+
+.agradecimientos-section {
+  .agradecimientos-logos {
+    > * {
+      max-width: 15%;
+      /* filter: brightness(100); */
+    }
+  }
+}
