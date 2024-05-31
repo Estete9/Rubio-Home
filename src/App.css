@@ -33,6 +33,10 @@
   }
 }
 
+.section-bg {
+  width: 100vw;
+}
+
 .agradecimientos-section {
   .agradecimientos-logos {
     > * {
