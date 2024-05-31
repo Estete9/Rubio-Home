@@ -2,16 +2,16 @@ import bgServicios from '../assets/mobile/servicios-img-mobile.png';
 import bullet from '../assets/icons/bullet.svg';
 
 const services = [
-  'Rotulación en Acrilico1',
-  'Rotulación en Acrilico2',
-  'Rotulación en Acrilico3',
-  'Rotulación en Acrilico4',
-  'Rotulación en Acrilico5',
-  'Rotulación en Acrilico6',
-  'Rotulación en Acrilico7',
-  'Rotulación en Acrilico8',
-  'Rotulación en Acrilico9',
-  'Rotulación en Acrilico10',
+  'Instalación de ACM',
+  'Rótulos iluminados a base de Leds',
+  'Fotomurales',
+  'Estructuras',
+  'Vallas Publicitarias',
+  'Totems / Monolitos',
+  'Directorios',
+  'Señalética industrial y vial',
+  'Banderolas',
+  'Diseño y asesoramiento',
 ];
 
 const Servicios = () => (
@@ -25,7 +25,7 @@ const Servicios = () => (
         <ul className="services-ul mt-5 flex flex-col gap-8 flex-1">
           {services.slice(0, Math.floor(services.length / 2)).map((service) => (
             <li key={service} className="service-item flex max-h-3 justify-end items-center gap-2">
-              <p className="font-helveticaNeue font-light text-secondary text-xs">{service}</p>
+              <p className="font-helveticaNeue font-light text-secondary text-xs text-end">{service}</p>
               <img src={bullet} alt="bullet icon" className="bullet-icon max-h-2" />
             </li>
           ))}
