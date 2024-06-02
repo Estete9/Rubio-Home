@@ -6,14 +6,16 @@ import email from '../assets/icons/email.svg';
 import phone from '../assets/icons/phone.svg';
 import copyright from '../assets/icons/copyright.svg';
 
+const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
 const Footer = () => (
   <>
     <div className="footer-top h-12 flex justify-between items-center">
       <img className="header-iso ml-2 max-h-5" src={iso} alt="logo iso" />
       <div className="footer-actions flex h-full items-center gap-1 mr-2">
-        <p className="footer-actions-word text-xs font-helveticaNeue font-light text-secondary">
+        <button type="button" className="footer-actions-word text-xs font-helveticaNeue font-light text-secondary" onClick={scrollTop}>
           Inicio
-        </p>
+        </button>
         <img className="footer-actions-chevron h-3" src={chevronUp} alt="scroll to top" />
       </div>
     </div>
