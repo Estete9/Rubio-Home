@@ -31,7 +31,7 @@ function App() {
         <Nosotros />
         <Agradecimientos />
       </main>
-      <footer className="px-3 pb-3 bg-neutral">
+      <footer id="contacto" className="px-3 pb-3 bg-neutral">
         <Footer scrollTop={scrollTop} />
       </footer>
     </>

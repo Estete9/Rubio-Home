@@ -10,6 +10,7 @@ const Header = ({ scrollTop }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <>
@@ -38,7 +39,7 @@ const Header = ({ scrollTop }) => {
           onClick={toggleMenu}
         />
       )}
-      {isMobile && <MobileMenu isMobile={isMobile} isOpen={isOpen} />}
+      {isMobile && <MobileMenu isMobile={isMobile} isOpen={isOpen} closeMenu={closeMenu} />}
     </>
   );
 };

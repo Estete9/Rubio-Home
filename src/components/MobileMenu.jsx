@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import chevronDown from '../assets/icons/chevron-down.svg';
 
-const menuItems = ['Servicios', 'Nosotros', 'Contacto'];
+const menuItems = ['servicios', 'nosotros', 'contacto'];
 
-const MobileMenu = ({ isMobile, isOpen }) => {
+const MobileMenu = ({ isMobile, isOpen, closeMenu }) => {
   const navStyles = {
     display: isOpen && isMobile ? 'flex' : 'none',
   };
@@ -16,14 +16,29 @@ const MobileMenu = ({ isMobile, isOpen }) => {
   return (
     <nav
       style={menuStyles}
-      className={`menu fixed top-12 z-10 bg-secondary/95 min-w-[75%] h-screen right-[-75%] ${isOpen && 'open'}`}
+      className={`menu fixed top-12 z-10 bg-secondary/95 min-w-[75%] h-screen right-[-75%] ${
+        isOpen && 'open'
+      }`}
     >
       <ul style={navStyles} className="navbar flex flex-col items-center gap-12 mt-36">
         {menuItems.map((item) => (
           <li key={item}>
-            <a href="/" className="flex items-center gap-1">
-              <p className="text-neutral font-helveticaNeue font-light text-2xl">{item}</p>
-              {item === 'Contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
+            <a
+              href={`#${item}`}
+              className="flex items-center gap-1"
+              onClick={(event) => {
+                event.preventDefault();
+                const targetSection = document.getElementById(item);
+                if (targetSection) {
+                  targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+                closeMenu();
+              }}
+            >
+              <p className="text-neutral font-helveticaNeue font-light text-2xl capitalize">
+                {item}
+              </p>
+              {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
             </a>
           </li>
         ))}
@@ -35,6 +50,7 @@ const MobileMenu = ({ isMobile, isOpen }) => {
 MobileMenu.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   isMobile: PropTypes.bool.isRequired,
+  closeMenu: PropTypes.func.isRequired,
 };
 
 export default MobileMenu;

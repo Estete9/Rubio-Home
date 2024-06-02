@@ -2,7 +2,7 @@ import bgNosotros from '../assets/mobile/nosotros-img-mobile.png';
 import download from '../assets/icons/download.svg';
 
 const Nosotros = () => (
-  <section className="nosotros-section relative">
+  <section id="nosotros" className="nosotros-section relative">
     <img src={bgNosotros} alt="Founder Jorge Rubio" className="nosotros-bg section-bg" />
     <article className="nosotros-content absolute flex flex-col gap-6 top-[8%] w-full justify-center px-3">
       <h1 className="nosotros-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
