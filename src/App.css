@@ -50,3 +50,14 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.menu {
+  transition: right 0.5s cubic-bezier(0.77,
+    0.2,
+    0.05,
+    1.0);
+}
+
+.menu.open {
+  right: 0;
+}
