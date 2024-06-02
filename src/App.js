@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <header className="h-12 bg-secondary flex justify-between px-3">
+      <header className="h-12 bg-secondary flex justify-between px-3 overflow-hidden">
         <Header />
       </header>
       <main className="">

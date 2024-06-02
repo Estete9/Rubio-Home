@@ -41,7 +41,12 @@
   .agradecimientos-logos {
     > * {
       max-width: 15%;
-      /* filter: brightness(100); */
     }
   }
+}
+
+.menu-btn {
+  background-image: url('./assets/icons/menu.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
