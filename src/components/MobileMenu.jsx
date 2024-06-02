@@ -9,14 +9,15 @@ const MobileMenu = ({ isMobile, isOpen }) => {
   };
 
   const menuStyles = {
-    display: isOpen && isMobile ? 'block' : 'none',
-    right: isOpen && isMobile ? '0' : '-70%',
+    // display: isOpen && isMobile ? 'block' : 'none',
+    right: isOpen && isMobile ? '0' : '-75%',
+    transition: 'right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)',
   };
 
   return (
     <nav
       style={menuStyles}
-      className="menu absolute top-12 z-10 bg-secondary/95 min-w-[70%] h-screen"
+      className={`menu fixed top-12 z-10 bg-secondary/95 min-w-[75%] h-screen right-[-75%] ${isOpen && 'open'}`}
     >
       <ul style={navStyles} className="navbar flex flex-col items-center gap-12 mt-36">
         {menuItems.map((item) => (
