@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import iso from '../assets/logos/iso-logo.svg';
 import chevronUp from '../assets/icons/chevron-up.svg';
 import computer from '../assets/icons/computer.svg';
@@ -6,14 +7,16 @@ import email from '../assets/icons/email.svg';
 import phone from '../assets/icons/phone.svg';
 import copyright from '../assets/icons/copyright.svg';
 
-const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
-const Footer = () => (
+const Footer = ({ scrollTop }) => (
   <>
     <div className="footer-top h-12 flex justify-between items-center">
       <img className="header-iso ml-2 max-h-5" src={iso} alt="logo iso" />
       <div className="footer-actions flex h-full items-center gap-1 mr-2">
-        <button type="button" className="footer-actions-word text-xs font-helveticaNeue font-light text-secondary" onClick={scrollTop}>
+        <button
+          type="button"
+          className="footer-actions-word text-xs font-helveticaNeue font-light text-secondary"
+          onClick={scrollTop}
+        >
           Inicio
         </button>
         <img className="footer-actions-chevron h-3" src={chevronUp} alt="scroll to top" />
@@ -52,5 +55,9 @@ const Footer = () => (
     </div>
   </>
 );
+
+Footer.propTypes = {
+  scrollTop: PropTypes.func.isRequired,
+};
 
 export default Footer;

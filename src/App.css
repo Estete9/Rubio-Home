@@ -45,6 +45,18 @@
   }
 }
 
+/* .iso-home-btn {
+  background-image: url(./assets/logos/iso-logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-btn {
+  background-image: url(./assets/logos/text-logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
 .menu-btn {
   background-image: url('./assets/icons/menu.svg');
   background-size: cover;

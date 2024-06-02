@@ -16,10 +16,12 @@ function App() {
     'bg-fixed',
   );
 
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
   return (
     <>
       <header className="h-12 bg-secondary flex justify-between px-3 w-screen fixed z-10">
-        <Header />
+        <Header scrollTop={scrollTop} />
       </header>
       <main className="">
         <Hero />
@@ -30,7 +32,7 @@ function App() {
         <Agradecimientos />
       </main>
       <footer className="px-3 pb-3 bg-neutral">
-        <Footer />
+        <Footer scrollTop={scrollTop} />
       </footer>
     </>
   );
