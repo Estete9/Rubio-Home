@@ -13,6 +13,7 @@ const Agradecimientos = () => (
         Agradecemos a nuestros clientes su confianza y fidelidad, a las firmas que en algún momento
         tuvimos la satisfacción de servirles.
         <br />
+        <br />
         También nuestro reconocimiento a colaboradores, familia, proveedores y al grupo humano
         que nos han acompañado en este camino, desde 1961.
       </p>
