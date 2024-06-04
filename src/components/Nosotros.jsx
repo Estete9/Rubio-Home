@@ -1,5 +1,6 @@
 import bgNosotros from '../assets/mobile/nosotros-img-mobile.png';
-import download from '../assets/icons/download.svg';
+import download from '../assets/icons/file-arrow-down-solid.svg';
+import cv from '../assets/mobile/cv.pdf';
 
 const Nosotros = () => (
   <section id="nosotros" className="nosotros-section relative">
@@ -18,19 +19,24 @@ const Nosotros = () => (
         mollit anim id est laborum.
       </p>
       <section className="nosotros-buttons flex gap-3 justify-center">
-        <button
-          type="button"
-          className="bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 rounded-md flex items-center gap-2"
+        <a
+          className="bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 rounded-md flex items-center justify-center gap-1"
+          href={cv}
+          target="_blank"
+          rel="noreferrer"
         >
           <img src={download} alt="download icon" className=" h-5" />
-          <p className="nosotros-btn-text mx-auto">Biografía</p>
-        </button>
-        <button
-          type="button"
-          className="bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 rounded-md"
+          <p className="nosotros-btn-text font-semibold">Biografía</p>
+        </a>
+        <a
+          className="bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 rounded-md flex items-center justify-center gap-1"
+          href={cv}
+          target="_blank"
+          rel="noreferrer"
         >
-          Presentación
-        </button>
+          <img src={download} alt="download icon" className="h-5" />
+          <p className="presentacion-btn-text font-semibold">Presentación</p>
+        </a>
       </section>
     </article>
   </section>
