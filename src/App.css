@@ -45,17 +45,33 @@
   }
 }
 
-.menu-btn {
-  background-image: url('./assets/icons/menu.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.menu {
+.nav-menu {
   transition: right 0.5s cubic-bezier(0.77,
     0.2,
     0.05,
     1.0);
+}
+
+.nav-item:first-child:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  border-bottom: 1px solid var(--primary-color);
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  margin-inline: auto
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  border-bottom: 1px solid var(--primary-color);
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  margin-inline: auto;
 }
 
 .menu.open {

@@ -9,20 +9,20 @@ const MobileMenu = ({ isMobile, isOpen, closeMenu }) => {
   };
 
   const menuStyles = {
-    right: isOpen && isMobile ? '0' : '-75%',
+    right: isOpen && isMobile ? '0' : '-100%',
     transition: 'right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)',
   };
 
   return (
     <nav
       style={menuStyles}
-      className={`menu fixed top-12 z-10 bg-secondary/95 min-w-[75%] h-screen right-[-75%] ${
+      className={`nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 min-w-full h-screen ${
         isOpen && 'open'
       }`}
     >
-      <ul style={navStyles} className="navbar flex flex-col items-center gap-12 mt-36">
+      <ul style={navStyles} className="nav-list flex flex-col items-center">
         {menuItems.map((item) => (
-          <li key={item}>
+          <li key={item} className="nav-item">
             <a
               href={`#${item}`}
               className="flex items-center gap-1"
@@ -35,7 +35,7 @@ const MobileMenu = ({ isMobile, isOpen, closeMenu }) => {
                 closeMenu();
               }}
             >
-              <p className="text-neutral font-helveticaNeue font-light text-2xl capitalize">
+              <p className="text-secondary font-helveticaNeue font-semibold text-2xl capitalize">
                 {item}
               </p>
               {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
