@@ -23,8 +23,8 @@ function App() {
 
   return (
     <>
-      <header className="h-12 bg-secondary flex justify-between px-3 w-screen fixed z-10 top-0">
-        <Header scrollTop={scrollTop} />
+      <header className=" header-container h-12 bg-secondary flex justify-between px-3 w-full fixed z-10 top-0">
+        <Header scrollTop={scrollTop} isMobile={isMobile} />
       </header>
       <main className="">
         <Hero isMobile={isMobile} />

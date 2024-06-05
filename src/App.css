@@ -94,4 +94,13 @@
       max-width: 25%;
     }
   }
+
+  .header-container {
+    padding-left: 120px;
+    padding-right: 120px;
+
+    .iso-home-btn {
+      max-height: 1.75rem;
+    }
+  }
 }
