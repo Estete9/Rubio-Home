@@ -7,12 +7,15 @@ import close from '../assets/icons/close.svg';
 import MobileMenu from './MobileMenu';
 import jorgeRubioLogo from '../assets/logos/Jorge Rubio Logo horizontal.svg';
 import rubioAsociadosLogo from '../assets/logos/Rubio & Asociados Logo final-black.svg';
+import chevronDown from '../assets/icons/chevron-down.svg';
 
 const Header = ({ scrollTop, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const menuItems = ['servicios', 'nosotros', 'contacto'];
 
   return (
     <>
@@ -46,23 +49,40 @@ const Header = ({ scrollTop, isMobile }) => {
         </>
       )}
       {!isMobile && (
-        <button
-          type="button"
-          className="home-text-btn h-full max-h-8 my-auto"
-          src={logoText}
-          alt="home button"
-          onClick={scrollTop}
-        >
-          <img className="home-btn h-full" src={rubioAsociadosLogo} alt="logo text" />
-        </button>
+        <>
+          <ul className="desktop-nav-menu flex w-1/6 justify-evenly">
+            {menuItems.map((item) => (
+              <li key={item} className="nav-item flex">
+                <a
+                  href={`#${item}`}
+                  className="flex items-center gap-1"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    const targetSection = document.getElementById(item);
+                    if (targetSection) {
+                      targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    closeMenu();
+                  }}
+                >
+                  <p className="font-helveticaNeue font-light text-sm capitalize">{item}</p>
+                  {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <button
+            type="button"
+            className="home-text-btn h-full max-h-8 my-auto"
+            src={logoText}
+            alt="home button"
+            onClick={scrollTop}
+          >
+            <img className="home-btn h-full" src={rubioAsociadosLogo} alt="logo text" />
+          </button>
+        </>
       )}
-      {isMobile && (
-        <MobileMenu
-          isMobile={isMobile}
-          isOpen={isOpen}
-          closeMenu={closeMenu}
-        />
-      )}
+      {isMobile && <MobileMenu isMobile={isMobile} isOpen={isOpen} closeMenu={closeMenu} />}
     </>
   );
 };

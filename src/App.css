@@ -46,25 +46,22 @@
 }
 
 .nav-menu {
-  transition: right 0.5s cubic-bezier(0.77,
-    0.2,
-    0.05,
-    1.0);
+  transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .nav-item:first-child:before {
-  content: "";
+  content: '';
   display: block;
   height: 1px;
   width: 80%;
   border-bottom: 1px solid var(--primary-color);
   padding-top: 2rem;
   margin-bottom: 2rem;
-  margin-inline: auto
+  margin-inline: auto;
 }
 
 .nav-item:after {
-  content: "";
+  content: '';
   display: block;
   height: 1px;
   width: 80%;
@@ -103,4 +100,19 @@
       max-height: 1.75rem;
     }
   }
+
+  .nav-item {
+    border-bottom: #d9ad26;
+  }
+
+  .nav-item:first-child:before {
+    content: '';
+    display: none;
+  }
+
+  .nav-item:after {
+    content: '';
+    display: none;
+  }
 }
+
