@@ -6,7 +6,7 @@ import heroLogo from '../assets/logos/Jorge Rubio Logo final-white.svg';
 const Hero = ({ isMobile }) => (
   <section className="hero-section relative mt-12">
     <img src={isMobile ? bgHeroMobile : bgHeroDesktop} alt="Kia Matriz" className="hero-bg section-bg" />
-    <div className="hero-content flex flex-col justify-center items-center gap-12 top-[15%] w-screen absolute">
+    <div className="hero-content flex flex-col justify-center items-center gap-12 top-[15%] w-full absolute">
       <h1 className="hero-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         ...PIONEROS EN EL
         <br />
