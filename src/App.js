@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -16,6 +17,8 @@ function App() {
     'bg-fixed',
   );
 
+  const [isMobile] = useState(window.innerWidth < 400);
+
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
@@ -24,7 +27,7 @@ function App() {
         <Header scrollTop={scrollTop} />
       </header>
       <main className="">
-        <Hero />
+        <Hero isMobile={isMobile} />
         <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
         <Servicios />
         <Divider quote="'Decididos al trabajo con excelencia'" />

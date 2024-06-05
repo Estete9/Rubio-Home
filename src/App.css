@@ -77,3 +77,21 @@
 .menu.open {
   right: 0;
 }
+
+/* DESKTOP MEDIA QUERY /////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    width: 50vw;
+    top: 33%;
+
+    .hero-headline {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    .hero-logo {
+      max-width: 25%;
+    }
+  }
+}

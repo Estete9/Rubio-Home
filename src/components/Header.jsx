@@ -6,8 +6,7 @@ import menu from '../assets/icons/menu.svg';
 import close from '../assets/icons/close.svg';
 import MobileMenu from './MobileMenu';
 
-const Header = ({ scrollTop }) => {
-  const [isMobile] = useState(window.innerWidth < 400);
+const Header = ({ scrollTop, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -49,6 +48,7 @@ const Header = ({ scrollTop }) => {
 
 Header.propTypes = {
   scrollTop: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default Header;
