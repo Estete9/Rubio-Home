@@ -24,7 +24,7 @@ const Header = ({ scrollTop, isMobile }) => {
       >
         <img className="iso-home-img h-full" src={isMobile ? iso : jorgeRubioLogo} alt="logo iso" />
       </button>
-      {isMobile ? (
+      {isMobile && (
         <>
           <button
             type="button"
@@ -44,7 +44,8 @@ const Header = ({ scrollTop, isMobile }) => {
             <img src={isOpen ? close : menu} alt="menu button" />
           </button>
         </>
-      ) : (
+      )}
+      {!isMobile && (
         <button
           type="button"
           className="home-text-btn h-full max-h-8 my-auto"
@@ -55,8 +56,13 @@ const Header = ({ scrollTop, isMobile }) => {
           <img className="home-btn h-full" src={rubioAsociadosLogo} alt="logo text" />
         </button>
       )}
-
-      {isMobile && <MobileMenu isMobile={isMobile} isOpen={isOpen} closeMenu={closeMenu} />}
+      {isMobile && (
+        <MobileMenu
+          isMobile={isMobile}
+          isOpen={isOpen}
+          closeMenu={closeMenu}
+        />
+      )}
     </>
   );
 };

@@ -3,7 +3,9 @@ import chevronDown from '../assets/icons/chevron-down.svg';
 
 const menuItems = ['servicios', 'nosotros', 'contacto'];
 
-const MobileMenu = ({ isMobile, isOpen, closeMenu }) => {
+const MobileMenu = ({
+  isMobile, isOpen, closeMenu,
+}) => {
   const navStyles = {
     display: isOpen && isMobile ? 'flex' : 'none',
   };
