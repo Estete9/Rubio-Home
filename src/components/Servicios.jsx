@@ -17,11 +17,11 @@ const services = [
 const Servicios = () => (
   <section id="servicios" className="services-section relative">
     <img src={bgServicios} alt="Estación Primax" className="servicios-bg section-bg" />
-    <div className="services-content w-screen flex flex-col items-center absolute top-[8%] left-0 gap-6 h-[45%]">
+    <div className="services-content w-full flex flex-col items-center absolute top-[8%] left-0 gap-6 h-[45%]">
       <h1 className="services-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         SERVICIOS
       </h1>
-      <section className="services-list flex w-screen px-3">
+      <section className="services-list flex w-full px-3">
         <ul className="services-ul mt-5 flex flex-col gap-8 flex-1">
           {services.slice(0, Math.floor(services.length / 2)).map((service) => (
             <li key={service} className="service-item flex max-h-3 justify-end items-center gap-2">
