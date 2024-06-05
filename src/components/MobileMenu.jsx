@@ -37,7 +37,7 @@ const MobileMenu = ({
                 closeMenu();
               }}
             >
-              <p className="text-secondary font-helveticaNeue font-semibold text-2xl capitalize">
+              <p className="text-secondary font-helveticaNeue font-light text-2xl capitalize">
                 {item}
               </p>
               {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
