@@ -16,7 +16,7 @@ const MobileMenu = ({ isMobile, isOpen, closeMenu }) => {
   return (
     <nav
       style={menuStyles}
-      className={`nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 min-w-full h-screen ${
+      className={`nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 backdrop-blur-sm min-w-full h-screen ${
         isOpen && 'open'
       }`}
     >
