@@ -23,13 +23,13 @@ function App() {
 
   return (
     <>
-      <header className=" header-container h-12 bg-secondary flex justify-between px-3 w-full fixed z-10 top-0">
+      <header className=" header-container h-12 bg-secondary flex justify-between px-3 w-full fixed z-10 top-0 shadow-sm shadow-neutral/10">
         <Header scrollTop={scrollTop} isMobile={isMobile} />
       </header>
       <main className="">
         <Hero isMobile={isMobile} />
         <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
-        <Servicios />
+        <Servicios isMobile={isMobile} />
         <Divider quote="'Decididos al trabajo con excelencia'" />
         <Nosotros />
         <Agradecimientos />
