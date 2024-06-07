@@ -31,7 +31,7 @@ function App() {
         <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
         <Servicios isMobile={isMobile} />
         <Divider quote="'Decididos al trabajo con excelencia'" />
-        <Nosotros />
+        <Nosotros isMobile={isMobile} />
         <Agradecimientos />
       </main>
       <footer id="contacto" className="px-3 pb-3 bg-neutral">

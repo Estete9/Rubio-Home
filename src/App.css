@@ -96,7 +96,7 @@
     width: 50%;
     right: 0;
     left: auto;
-    top: 7rem;
+    top: 16%;
     gap: 3rem;
     margin-right: 3%;
 
@@ -138,6 +138,32 @@
   .nav-item:after {
     content: '';
     display: none;
+  }
+
+  .nosotros-content {
+    width: 50%;
+    top: 16%;
+    margin-left: 3%;
+    align-items: center;
+    gap: 4.25rem;
+
+    .nosotros-headline {
+      font-size: 2.5rem;
+    }
+
+    .nosotros-btn {
+      padding: 1.25rem 3rem;
+      gap: 10%;
+    }
+
+    .nosotros-text {
+      font-size: 1.25rem;
+      width: 85%;
+    }
+
+    .nosotros-btn-text {
+      font-size: 1rem;
+    }
   }
 }
 
