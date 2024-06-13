@@ -5,7 +5,7 @@ import bullet from '../assets/icons/bullet.svg';
 
 const services = [
   'Instalación de ACM',
-  'Rótulos iluminados a base de Leds',
+  'Rótulos con iluminación LED',
   'Fotomurales',
   'Estructuras',
   'Vallas Publicitarias',
@@ -23,8 +23,8 @@ const Servicios = ({ isMobile }) => (
       alt="Estación Primax"
       className="servicios-bg section-bg"
     />
-    <div className="services-content w-full flex flex-col items-center absolute top-[8%] left-0 gap-6 h-[45%]">
-      <h1 className="services-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
+    <div className="services-content w-full flex flex-col items-center absolute top-[8%] left-0 gap-6 h-full">
+      <h1 className="services-headline headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         SERVICIOS
       </h1>
       <section className="services-list flex w-full px-3">

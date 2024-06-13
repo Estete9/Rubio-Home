@@ -83,29 +83,33 @@
     top: 33%;
 
     .hero-headline {
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 2.25rem;
+      line-height: unset;
     }
 
     .hero-logo {
-      max-width: 25%;
+      width: 25%;
+      max-width: 150px;
     }
+  }
+
+  .headline {
+    font-size: 2rem;
   }
 
   .services-content {
     width: 50%;
     right: 0;
     left: auto;
-    top: 16%;
-    gap: 3rem;
+    top: 0;
+    gap: 2rem;
     margin-right: 3%;
+    justify-content: center;
+    align-items: center;
 
-    .services-headline {
-      font-size: 2.5rem;
-    }
 
     .service-item-text {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
 
     .services-ul {
@@ -147,10 +151,6 @@
     align-items: center;
     gap: 4.25rem;
 
-    .nosotros-headline {
-      font-size: 2.5rem;
-    }
-
     .nosotros-btn {
       padding: 1.25rem 3rem;
       gap: 10%;
@@ -182,10 +182,6 @@
       flex-direction: column;
       align-items: center;
       gap: 4rem;
-
-      .agradecimientos-title {
-        font-size: 2.5rem;
-      }
 
       .agradecimientos-text {
         font-size: 1.25rem;

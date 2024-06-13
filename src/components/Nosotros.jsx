@@ -12,7 +12,7 @@ const Nosotros = ({ isMobile }) => (
       className="nosotros-bg section-bg"
     />
     <article className="nosotros-content absolute flex flex-col gap-6 top-[8%] w-full justify-center px-3">
-      <h1 className="nosotros-headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
+      <h1 className="nosotros-headline headline text-secondary font-helveticaNeue font-light text-3xl mx-auto">
         NOSOTROS
       </h1>
       <p className="nosotros-text text-secondary font-helveticaNeue font-light text-sm">
