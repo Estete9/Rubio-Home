@@ -25,7 +25,7 @@ const Nosotros = ({ isMobile }) => (
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-      <section className="nosotros-buttons flex gap-3 justify-center">
+      <section className="nosotros-btns flex gap-3 justify-center">
         <a
           className="nosotros-btn bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 max-w-44 rounded-md flex items-center justify-center gap-1"
           href={cv}

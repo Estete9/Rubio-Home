@@ -107,7 +107,6 @@
     justify-content: center;
     align-items: center;
 
-
     .service-item-text {
       font-size: 1rem;
     }
@@ -146,10 +145,20 @@
 
   .nosotros-content {
     width: 50%;
-    top: 16%;
-    margin-left: 3%;
+    height: 100%;
+    justify-content: center;
     align-items: center;
-    gap: 4.25rem;
+    top: 0;
+    margin-left: 3%;
+    gap: unset;
+
+    .nosotros-headline {
+      margin-bottom: 2rem;
+    }
+
+    .nosotros-btns {
+      margin-top: 4rem;
+    }
 
     .nosotros-btn {
       padding: 1.25rem 3rem;
@@ -181,7 +190,7 @@
       width: 50%;
       flex-direction: column;
       align-items: center;
-      gap: 4rem;
+      gap: 3rem;
 
       .agradecimientos-text {
         font-size: 1.25rem;
