@@ -216,5 +216,12 @@
       }
     }
   }
-}
 
+  .divider-section {
+    height: 4rem;
+
+    .divider-text {
+      font-size: 1.25rem;
+    }
+  }
+}
