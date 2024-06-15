@@ -50,7 +50,7 @@ const Header = ({ scrollTop, isMobile }) => {
       )}
       {!isMobile && (
         <>
-          <ul className="desktop-nav-menu flex w-1/6 justify-evenly">
+          <ul className="desktop-nav-menu flex justify-evenly gap-8">
             {menuItems.map((item) => (
               <li key={item} className="nav-item flex">
                 <a
