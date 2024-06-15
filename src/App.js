@@ -1,12 +1,13 @@
 import './App.css';
 import { useState } from 'react';
-import Footer from './components/Footer';
+import MobileFooter from './components/MobileFooter';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Servicios from './components/Servicios';
 import Divider from './components/Divider';
 import Nosotros from './components/Nosotros';
 import Agradecimientos from './components/Agradecimientos';
+import DesktopFooter from './components/DesktopFooter';
 
 function App() {
   document.body.classList.add(
@@ -35,7 +36,7 @@ function App() {
         <Agradecimientos />
       </main>
       <footer id="contacto" className="px-3 pb-3 bg-neutral">
-        <Footer scrollTop={scrollTop} />
+        {isMobile ? <MobileFooter scrollTop={scrollTop} /> : <DesktopFooter />}
       </footer>
     </>
   );
