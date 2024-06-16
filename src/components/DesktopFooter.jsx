@@ -9,7 +9,7 @@ const DesktopFooter = () => (
   <>
     <div className="footer-content flex items-center">
       <img className="header-iso ml-2 max-h-8" src={iso} alt="logo iso" />
-      <ul className="footer-content-list mt-4">
+      <ul className="footer-content-list">
         <div className="flex justify-center gap-12">
           <li>
             <img src={pin} alt="location icon" className="footer-icon" />

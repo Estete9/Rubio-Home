@@ -223,6 +223,10 @@
     }
   }
 
+  footer {
+    padding-top: 0.75rem;
+  }
+
   .footer-content {
     list-style: none;
 
