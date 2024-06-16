@@ -36,7 +36,11 @@ function App() {
         <Agradecimientos />
       </main>
       <footer id="contacto" className="px-3 pb-3 bg-neutral">
-        {isMobile ? <MobileFooter scrollTop={scrollTop} /> : <DesktopFooter />}
+        {isMobile ? (
+          <MobileFooter scrollTop={scrollTop} />
+        ) : (
+          <DesktopFooter scrollTop={scrollTop} />
+        )}
       </footer>
     </>
   );

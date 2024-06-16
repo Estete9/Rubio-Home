@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import iso from '../assets/logos/iso-logo.svg';
 import computer from '../assets/icons/computer.svg';
 import pin from '../assets/icons/pin.svg';
@@ -5,10 +6,17 @@ import email from '../assets/icons/email.svg';
 import phone from '../assets/icons/phone.svg';
 import copyright from '../assets/icons/copyright.svg';
 
-const DesktopFooter = () => (
+const DesktopFooter = ({ scrollTop }) => (
   <>
     <div className="footer-content flex items-center">
-      <img className="header-iso ml-2 max-h-8" src={iso} alt="logo iso" />
+      <button
+        type="button"
+        className="iso-home-btn my-auto h-full"
+        alt="jorge Rubio Logo home button"
+        onClick={scrollTop}
+      >
+        <img className="header-iso ml-2 h-8" src={iso} alt="logo iso" />
+      </button>
       <ul className="footer-content-list">
         <div className="flex justify-center gap-12">
           <li>
@@ -44,5 +52,9 @@ const DesktopFooter = () => (
     </div>
   </>
 );
+
+DesktopFooter.propTypes = {
+  scrollTop: PropTypes.func.isRequired,
+};
 
 export default DesktopFooter;
