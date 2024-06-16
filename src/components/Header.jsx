@@ -8,6 +8,7 @@ import MobileMenu from './MobileMenu';
 import jorgeRubioLogo from '../assets/logos/Jorge Rubio Logo horizontal.svg';
 import rubioAsociadosLogo from '../assets/logos/Rubio & Asociados Logo final-black.svg';
 import chevronDown from '../assets/icons/chevron-down.svg';
+import chevronUp from '../assets/icons/chevron-up.svg';
 import ContactosDropdown from './ContactosDropdown';
 
 const Header = ({ scrollTop, isMobile }) => {
@@ -75,7 +76,7 @@ const Header = ({ scrollTop, isMobile }) => {
                   <p className="font-helveticaNeue font-light text-sm capitalize">{item}</p>
                   {item === 'contacto' && (
                     <button type="button" onClick={toggleContactosDropdown} className="relative">
-                      <img src={chevronDown} alt="test" className="min-h-4" />
+                      <img src={isContactosOpen ? chevronUp : chevronDown} alt="test" className="min-h-4" />
                       <ContactosDropdown isMobile={isMobile} isContactosOpen={isContactosOpen} />
                     </button>
                   )}
