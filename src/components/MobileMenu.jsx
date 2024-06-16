@@ -4,23 +4,21 @@ import chevronDown from '../assets/icons/chevron-down.svg';
 const menuItems = ['servicios', 'nosotros', 'contacto'];
 
 const MobileMenu = ({
-  isMobile, isOpen, closeMenu,
+  isMobile, isMenuOpen, closeMenu,
 }) => {
   const navStyles = {
-    display: isOpen && isMobile ? 'flex' : 'none',
+    display: isMenuOpen && isMobile ? 'flex' : 'none',
   };
 
   const menuStyles = {
-    right: isOpen && isMobile ? '0' : '-100%',
+    right: isMenuOpen && isMobile ? '0' : '-100%',
     transition: 'right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)',
   };
 
   return (
     <nav
       style={menuStyles}
-      className={`nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 backdrop-blur-sm min-w-full h-screen ${
-        isOpen && 'open'
-      }`}
+      className="nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 backdrop-blur-sm min-w-full h-screen"
     >
       <ul style={navStyles} className="nav-list flex flex-col items-center">
         {menuItems.map((item) => (
@@ -50,7 +48,7 @@ const MobileMenu = ({
 };
 
 MobileMenu.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
+  isMenuOpen: PropTypes.bool.isRequired,
   isMobile: PropTypes.bool.isRequired,
   closeMenu: PropTypes.func.isRequired,
 };

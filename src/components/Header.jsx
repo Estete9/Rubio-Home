@@ -8,12 +8,15 @@ import MobileMenu from './MobileMenu';
 import jorgeRubioLogo from '../assets/logos/Jorge Rubio Logo horizontal.svg';
 import rubioAsociadosLogo from '../assets/logos/Rubio & Asociados Logo final-black.svg';
 import chevronDown from '../assets/icons/chevron-down.svg';
+import ContactosDropdown from './ContactosDropdown';
 
 const Header = ({ scrollTop, isMobile }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isContactosOpen, setContactosOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setMenuOpen(!isMenuOpen);
+  const closeMenu = () => setMenuOpen(false);
+  const toggleContactosDropdown = () => setContactosOpen(!isContactosOpen);
 
   const menuItems = ['servicios', 'nosotros', 'contacto'];
 
@@ -44,7 +47,7 @@ const Header = ({ scrollTop, isMobile }) => {
             alt="menu button"
             onClick={toggleMenu}
           >
-            <img src={isOpen ? close : menu} alt="menu button" />
+            <img src={isMenuOpen ? close : menu} alt="menu button" />
           </button>
         </>
       )}
@@ -58,15 +61,24 @@ const Header = ({ scrollTop, isMobile }) => {
                   className="flex items-center gap-1"
                   onClick={(event) => {
                     event.preventDefault();
-                    const targetSection = document.getElementById(item);
-                    if (targetSection) {
-                      targetSection.scrollIntoView({ behavior: 'smooth' });
+                    if (item === 'contacto') {
+                      toggleContactosDropdown();
+                    } else {
+                      const targetSection = document.getElementById(item);
+                      if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                      closeMenu();
                     }
-                    closeMenu();
                   }}
                 >
                   <p className="font-helveticaNeue font-light text-sm capitalize">{item}</p>
-                  {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
+                  {item === 'contacto' && (
+                    <button type="button" onClick={toggleContactosDropdown} className="relative">
+                      <img src={chevronDown} alt="test" className="min-h-4" />
+                      <ContactosDropdown isMobile={isMobile} isContactosOpen={isContactosOpen} />
+                    </button>
+                  )}
                 </a>
               </li>
             ))}
@@ -82,7 +94,7 @@ const Header = ({ scrollTop, isMobile }) => {
           </button>
         </>
       )}
-      {isMobile && <MobileMenu isMobile={isMobile} isOpen={isOpen} closeMenu={closeMenu} />}
+      {isMobile && <MobileMenu isMobile={isMobile} isMenuOpen={isMenuOpen} closeMenu={closeMenu} />}
     </>
   );
 };

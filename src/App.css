@@ -45,7 +45,7 @@
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
     .agradecimientos-logos {
-      animation: scroll-animation 60s linear infinite paused;
+      animation: infinite-scroll-animation 60s linear infinite paused;
 
       > * {
         max-width: 5rem;
@@ -58,7 +58,7 @@
   }
 }
 
-@keyframes scroll-animation {
+@keyframes infinite-scroll-animation {
   from {
     transform: translateX(0);
   }
@@ -66,10 +66,6 @@
   to {
     transform: translateX(calc(-50% - (80px * 23)));
   }
-}
-
-.nav-menu {
-  transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .nav-item:first-child:before {
@@ -92,10 +88,6 @@
   padding-top: 2rem;
   margin-bottom: 2rem;
   margin-inline: auto;
-}
-
-.menu.open {
-  right: 0;
 }
 
 /* DESKTOP MEDIA QUERY /////////////////////////////////////////////////////////////////////////////////// */
@@ -149,6 +141,24 @@
 
     .iso-home-btn {
       max-height: 1.75rem;
+    }
+  }
+
+  .contactos-dropdown {
+    padding: 3rem 4rem;
+    gap: 2rem;
+    width: 470px;
+
+    li {
+      display: flex;
+      gap: 1rem;
+      text-align: start;
+      align-items: center;
+    }
+
+    .contactos-icon {
+      max-height: 1rem;
+      filter: brightness(0.3);
     }
   }
 
