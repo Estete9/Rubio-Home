@@ -41,7 +41,7 @@
   overflow: hidden;
 
   .agradecimientos-logos {
-    animation: scroll-animation 50s linear infinite paused;
+    animation: scroll-animation 30s linear infinite paused;
 
     > * {
       max-width: 15%;

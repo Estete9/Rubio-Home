@@ -18,6 +18,14 @@ const Agradecimientos = () => {
       });
     });
     observer.observe(logosContainer);
+
+    const logos = Array.from(logosContainer.children);
+
+    logos.forEach((logo) => {
+      const duplicatedLogo = logo.cloneNode(true);
+      duplicatedLogo.setAttribute('aria-hidden', true);
+      logosContainer.appendChild(duplicatedLogo);
+    });
   }, []);
 
   return (
