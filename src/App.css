@@ -38,10 +38,28 @@
 }
 
 .agradecimientos-section {
+  overflow: hidden;
+
   .agradecimientos-logos {
+    animation: scroll-animation 50s linear infinite paused;
+
     > * {
       max-width: 15%;
     }
+  }
+
+    .agradecimientos-logos.start {
+      animation-play-state: running;
+    }
+}
+
+@keyframes scroll-animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - (80px * 23)));
   }
 }
 
@@ -225,3 +243,4 @@
     }
   }
 }
+
