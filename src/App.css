@@ -40,17 +40,22 @@
 .agradecimientos-section {
   overflow: hidden;
 
-  .agradecimientos-logos {
-    animation: scroll-animation 30s linear infinite paused;
+  .agradecimientos-wrapper {
+    --webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
-    > * {
-      max-width: 15%;
+    .agradecimientos-logos {
+      animation: scroll-animation 60s linear infinite paused;
+
+      > * {
+        max-width: 5rem;
+      }
     }
-  }
 
     .agradecimientos-logos.start {
       animation-play-state: running;
     }
+  }
 }
 
 @keyframes scroll-animation {
@@ -196,11 +201,13 @@
   .agradecimientos-section {
     gap: 4rem;
 
-    .agradecimientos-logos {
-      max-width: 1440px;
+    .agradecimientos-wrapper {
+      .agradecimientos-logos {
+        max-width: 1440px;
 
-      > * {
-        max-width: 7%;
+        > * {
+          max-width: 7%;
+        }
       }
     }
 

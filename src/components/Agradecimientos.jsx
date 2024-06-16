@@ -43,32 +43,34 @@ const Agradecimientos = () => {
           nos han acompañado en este camino, desde 1961.
         </p>
       </article>
-      <section className="agradecimientos-logos flex justify-start h-fit w-full">
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-        <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-      </section>
+      <div className="agradecimientos-wrapper w-full">
+        <section className="agradecimientos-logos flex justify-start h-fit w-full">
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
+          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+        </section>
+      </div>
     </section>
   );
 };
