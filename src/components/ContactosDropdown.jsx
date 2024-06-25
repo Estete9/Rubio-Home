@@ -5,9 +5,9 @@ import phone from '../assets/icons/phone.svg';
 
 const ContactosDropdown = ({ isMobile, isContactosOpen }) => {
   const contactosStyles = {
-    visibility: !isMobile && isContactosOpen ? 'visible' : 'hidden',
-    top: !isMobile && isContactosOpen ? '2rem' : '-226px',
-    opacity: !isMobile && isContactosOpen ? '1' : '0',
+    visibility: isContactosOpen ? 'visible' : 'hidden',
+    top: isContactosOpen ? '2rem' : '-226px',
+    opacity: isContactosOpen ? '1' : '0',
     transition: 'top 0.5s ease-in-out, visibility 0.5s ease-in-out, opacity 0.5s ease-in-out',
   };
   return (
@@ -21,7 +21,7 @@ const ContactosDropdown = ({ isMobile, isContactosOpen }) => {
       </li>
       <li>
         <img src={phone} alt="telephone icon" className="contactos-icon" />
-        <p className="font-helveticaNeue font-light">0999441305 - 0985722115 - 02240047</p>
+        <p className={`font-helveticaNeue font-light`}>0999441305 - 0985722115 - 02240047</p>
       </li>
       <li>
         <img src={email} alt="email icon" className="contactos-icon" />

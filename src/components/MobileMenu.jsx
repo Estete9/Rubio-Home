@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import chevronDown from '../assets/icons/chevron-down.svg';
+import chevronUp from '../assets/icons/chevron-up.svg';
+import ContactosDropdown from './ContactosDropdown';
 
 const menuItems = ['servicios', 'nosotros', 'contacto'];
 
 const MobileMenu = ({
   isMobile, isMenuOpen, closeMenu,
 }) => {
+  const [isContactosOpen, setContactosOpen] = useState(false);
+  const toggleContactosDropdown = () => setContactosOpen(!isContactosOpen);
+
   const navStyles = {
     display: isMenuOpen && isMobile ? 'flex' : 'none',
   };
@@ -28,17 +34,26 @@ const MobileMenu = ({
               className="flex items-center gap-1"
               onClick={(event) => {
                 event.preventDefault();
-                const targetSection = document.getElementById(item);
-                if (targetSection) {
-                  targetSection.scrollIntoView({ behavior: 'smooth' });
+                if (item === 'contacto') {
+                  toggleContactosDropdown();
+                } else {
+                  const targetSection = document.getElementById(item);
+                  if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  closeMenu();
                 }
-                closeMenu();
               }}
             >
               <p className="text-secondary font-helveticaNeue font-light text-2xl capitalize">
                 {item}
               </p>
-              {item === 'contacto' && <img src={chevronDown} alt="test" className="max-h-4" />}
+              {item === 'contacto' && (
+                <button type="button" onClick={toggleContactosDropdown} className="relative">
+                  <img src={isContactosOpen ? chevronUp : chevronDown} alt="test" className="min-h-4" />
+                  <ContactosDropdown isMobile={isMobile} isContactosOpen={isContactosOpen} />
+                </button>
+              )}
             </a>
           </li>
         ))}
