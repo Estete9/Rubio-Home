@@ -48,8 +48,8 @@
     .agradecimientos-logos {
       animation: infinite-scroll-animation 60s linear infinite paused;
 
-      >* {
-        max-width: 5rem;
+      > * {
+        max-width: 4rem;
       }
     }
 
@@ -178,24 +178,6 @@
       }
     }
   }
-
-  /* .contactos-dropdown {
-    padding: 3rem 4rem;
-    gap: 2rem;
-    width: 470px;
-
-    li {
-      display: flex;
-      gap: 1rem;
-      text-align: start;
-      align-items: center;
-    }
-
-    .contactos-icon {
-      max-height: 1rem;
-      filter: brightness(0.3);
-    }
-  } */
 
   .nav-item {
     border-bottom: #d9ad26;
