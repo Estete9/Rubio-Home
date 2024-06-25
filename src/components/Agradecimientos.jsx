@@ -43,7 +43,7 @@ const Agradecimientos = () => {
           nos han acompañado en este camino, desde 1961.
         </p>
       </article>
-      <div className="agradecimientos-wrapper w-full">
+      <div className="agradecimientos-wrapper w-full bg-secondary/40">
         <section className="agradecimientos-logos flex justify-start h-fit w-full">
           <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
           <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
