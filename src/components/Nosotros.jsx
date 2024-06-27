@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import bgNosotrosMobile from '../assets/mobile/nosotros-img-mobile.png';
-import bgNosotrosDesktop from '../assets/desktop/nosotros-img.png';
+import bgNosotrosDesktop from '../assets/desktop/nosotros-img-1920.png';
 import download from '../assets/icons/file-arrow-down-solid.svg';
 import cv from '../assets/mobile/cv.pdf';
 
