@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import bgServiciosMobile from '../assets/mobile/servicios-img-mobile.png';
-import bgServiciosDesktop from '../assets/desktop/servicios-img.png';
+import bgServiciosDesktop from '../assets/desktop/servicios-img-1920.png';
 import bullet from '../assets/icons/bullet.svg';
 
 const services = [
