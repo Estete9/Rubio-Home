@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import images from '../utils/loadImages';
 import primaxLogo from '../assets/logos/primax-logo.svg';
 import shellLogo from '../assets/logos/shell-logo.svg';
 import supermaxiLogo from '../assets/logos/supermaxi-logo.svg';
@@ -45,30 +46,10 @@ const Agradecimientos = () => {
       </article>
       <div className="agradecimientos-wrapper w-full bg-secondary/40">
         <section className="agradecimientos-logos flex justify-start h-fit w-full">
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={primaxLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={shellLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={supermaxiLogo} alt="primax logo" className="agradecimientos-logo" />
-          <img src={kiaLogo} alt="primax logo" className="agradecimientos-logo" />
+          {Object.keys(images).map((key, index) => (
+            <img key={index} src={images[key]} alt={key} className="agradecimientos-logo" />
+          )
+          )}
         </section>
       </div>
     </section>
