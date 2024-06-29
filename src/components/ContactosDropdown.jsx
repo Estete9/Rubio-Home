@@ -26,7 +26,7 @@ const ContactosDropdown = ({ isMobile, isContactosOpen }) => {
       <li>
         <img src={phone} alt="telephone icon" className="contactos-icon" />
         <p className="contact-text font-helveticaNeue font-light">
-          0999441305 - 0985722115 - 02240047
+          0985722115 - 02240047
         </p>
       </li>
       <li>
@@ -34,8 +34,6 @@ const ContactosDropdown = ({ isMobile, isContactosOpen }) => {
         <div className="flex flex-col">
           <p className="contact-text font-helveticaNeue font-light">
             ventas@rubiopublicidad.com.ec
-            <br />
-            rubioarte@rubiopublicidad.com.ec
           </p>
         </div>
       </li>
