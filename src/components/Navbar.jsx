@@ -4,7 +4,7 @@ import chevronDown from '../assets/icons/chevron-down.svg';
 import chevronUp from '../assets/icons/chevron-up.svg';
 import ContactosDropdown from './ContactosDropdown';
 
-const Navbar = ({ isMobile }) => {
+const Navbar = ({ isMobile, closeMenu }) => {
   const menuItems = ['servicios', 'nosotros', 'contacto'];
   const [isContactosOpen, setContactosOpen] = useState(false);
   const toggleContactosDropdown = () => setContactosOpen(!isContactosOpen);
@@ -24,6 +24,9 @@ const Navbar = ({ isMobile }) => {
                 if (targetSection) {
                   targetSection.scrollIntoView({ behavior: 'smooth' });
                 }
+              }
+              if (isMobile) {
+                closeMenu();
               }
             }}
           >
@@ -47,6 +50,7 @@ const Navbar = ({ isMobile }) => {
 
 Navbar.propTypes = {
   isMobile: PropTypes.bool.isRequired,
+  closeMenu: PropTypes.func.isRequired,
 };
 
 export default Navbar;

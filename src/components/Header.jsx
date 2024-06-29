@@ -48,7 +48,7 @@ const Header = ({ scrollTop, isMobile }) => {
       )}
       {!isMobile && (
         <>
-          <Navbar />
+          <Navbar isMobile={isMobile} closeMenu={closeMenu} />
           <button
             type="button"
             className="home-text-btn h-full max-h-8 my-auto"
