@@ -20,7 +20,8 @@
     font-size: 1rem;
   }
 
-  .footer-contact-info, .footer-legal-info {
+  .footer-contact-info,
+  .footer-legal-info {
     display: flex;
     gap: 0.75rem;
     min-height: 1.5rem;
@@ -45,10 +46,10 @@
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
     .agradecimientos-logos {
-      animation: infinite-scroll-animation 60s linear infinite paused;
+      animation: infinite-scroll-animation 60s linear infinite alternate paused;
 
       > * {
-        max-width: 5rem;
+        max-width: 3rem;
       }
     }
 
@@ -64,7 +65,7 @@
   }
 
   to {
-    transform: translateX(calc(-50% - (80px * 23)));
+    transform: translateX(calc(-80px * 23));
   }
 }
 
@@ -90,9 +91,31 @@
   margin-inline: auto;
 }
 
+.contactos-dropdown {
+  padding: 2rem;
+  gap: 1rem;
+  width: 90vw;
+
+  li {
+    display: flex;
+    gap: 1rem;
+    text-align: start;
+    align-items: center;
+
+    .contact-text {
+      font-size: 0.75rem;
+    }
+  }
+
+  .contactos-icon {
+    max-height: 1rem;
+    filter: brightness(0.3);
+  }
+}
+
 /* DESKTOP MEDIA QUERY /////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (width >= 1100px) {
+@media screen and (width >=1100px) {
   .hero-content {
     width: 50vw;
     top: 33%;
@@ -150,15 +173,9 @@
     width: 470px;
 
     li {
-      display: flex;
-      gap: 1rem;
-      text-align: start;
-      align-items: center;
-    }
-
-    .contactos-icon {
-      max-height: 1rem;
-      filter: brightness(0.3);
+      .contact-text {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -210,12 +227,13 @@
 
   .agradecimientos-section {
     gap: 4rem;
+    padding-block: 8%;
 
     .agradecimientos-wrapper {
       .agradecimientos-logos {
         max-width: 1440px;
 
-        > * {
+        >* {
           max-width: 7%;
         }
       }
@@ -244,7 +262,8 @@
       width: 100%;
     }
 
-    .footer-contact-info, .footer-legal-info {
+    .footer-contact-info,
+    .footer-legal-info {
       align-items: baseline;
       justify-content: center;
       text-wrap: nowrap;
@@ -269,4 +288,3 @@
     }
   }
 }
-

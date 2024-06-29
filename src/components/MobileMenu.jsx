@@ -6,7 +6,9 @@ import ContactosDropdown from './ContactosDropdown';
 
 const menuItems = ['servicios', 'nosotros', 'contacto'];
 
-const MobileMenu = ({ isMobile, isMenuOpen, closeMenu }) => {
+const MobileMenu = ({
+  isMobile, isMenuOpen, closeMenu,
+}) => {
   const [isContactosOpen, setContactosOpen] = useState(false);
   const toggleContactosDropdown = () => setContactosOpen(!isContactosOpen);
 
@@ -44,11 +46,7 @@ const MobileMenu = ({ isMobile, isMenuOpen, closeMenu }) => {
               </p>
               {item === 'contacto' && (
                 <button type="button" onClick={toggleContactosDropdown} className="relative">
-                  <img
-                    src={isContactosOpen ? chevronUp : chevronDown}
-                    alt="test"
-                    className="min-h-4"
-                  />
+                  <img src={isContactosOpen ? chevronUp : chevronDown} alt="test" className="min-h-4" />
                   <ContactosDropdown isMobile={isMobile} isContactosOpen={isContactosOpen} />
                 </button>
               )}
