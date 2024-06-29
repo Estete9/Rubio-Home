@@ -3,13 +3,7 @@ import chevronDown from '../assets/icons/chevron-down.svg';
 
 const menuItems = ['servicios', 'nosotros', 'contacto'];
 
-const MobileMenu = ({
-  isMobile, isMenuOpen, closeMenu,
-}) => {
-  const navStyles = {
-    display: isMenuOpen && isMobile ? 'flex' : 'none',
-  };
-
+const MobileMenu = ({ isMobile, isMenuOpen, closeMenu }) => {
   const menuStyles = {
     right: isMenuOpen && isMobile ? '0' : '-100%',
     transition: 'right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)',
@@ -20,7 +14,7 @@ const MobileMenu = ({
       style={menuStyles}
       className="nav-menu flex flex-col items-center justify-center fixed z-10 bg-neutral/95 backdrop-blur-sm min-w-full h-screen"
     >
-      <ul style={navStyles} className="nav-list flex flex-col items-center">
+      <ul className="nav-list flex flex-col items-center">
         {menuItems.map((item) => (
           <li key={item} className="nav-item">
             <a
