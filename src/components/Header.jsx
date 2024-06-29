@@ -7,19 +7,13 @@ import close from '../assets/icons/close.svg';
 import MobileMenu from './MobileMenu';
 import jorgeRubioLogo from '../assets/logos/Jorge Rubio Logo horizontal.svg';
 import rubioAsociadosLogo from '../assets/logos/Rubio & Asociados Logo final-black.svg';
-import chevronDown from '../assets/icons/chevron-down.svg';
-import chevronUp from '../assets/icons/chevron-up.svg';
-import ContactosDropdown from './ContactosDropdown';
+import Navbar from './Navbar';
 
 const Header = ({ scrollTop, isMobile }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isContactosOpen, setContactosOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
   const closeMenu = () => setMenuOpen(false);
-  const toggleContactosDropdown = () => setContactosOpen(!isContactosOpen);
-
-  const menuItems = ['servicios', 'nosotros', 'contacto'];
 
   return (
     <>
@@ -54,36 +48,7 @@ const Header = ({ scrollTop, isMobile }) => {
       )}
       {!isMobile && (
         <>
-          <ul className="desktop-nav-menu flex justify-evenly gap-8">
-            {menuItems.map((item) => (
-              <li key={item} className="nav-item flex">
-                <a
-                  href={`#${item}`}
-                  className="flex items-center gap-1"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    if (item === 'contacto') {
-                      toggleContactosDropdown();
-                    } else {
-                      const targetSection = document.getElementById(item);
-                      if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: 'smooth' });
-                      }
-                      closeMenu();
-                    }
-                  }}
-                >
-                  <p className="font-helveticaNeue font-light text-sm capitalize">{item}</p>
-                  {item === 'contacto' && (
-                    <button type="button" onClick={toggleContactosDropdown} className="relative">
-                      <img src={isContactosOpen ? chevronUp : chevronDown} alt="test" className="min-h-4" />
-                      <ContactosDropdown isMobile={isMobile} isContactosOpen={isContactosOpen} />
-                    </button>
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Navbar />
           <button
             type="button"
             className="home-text-btn h-full max-h-8 my-auto"
