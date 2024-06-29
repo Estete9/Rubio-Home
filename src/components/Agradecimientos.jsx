@@ -1,36 +1,35 @@
 import React, { useEffect } from 'react';
 import images from '../utils/loadImages';
-import primaxLogo from '../assets/logos/primax-logo.svg';
-import shellLogo from '../assets/logos/shell-logo.svg';
-import supermaxiLogo from '../assets/logos/supermaxi-logo.svg';
-import kiaLogo from '../assets/logos/kia-logo.svg';
+import { splitImages } from '../utils/splitImages';
+// import primaxLogo from '../assets/logos/primax-logo.svg';
+// import shellLogo from '../assets/logos/shell-logo.svg';
+// import supermaxiLogo from '../assets/logos/supermaxi-logo.svg';
+// import kiaLogo from '../assets/logos/kia-logo.svg';
 
 const Agradecimientos = () => {
+
+  const sections = splitImages(images);
+
   useEffect(() => {
-    const logosContainer = document.body.querySelector('.agradecimientos-logos');
+    const logosContainers = document.body.querySelectorAll('.agradecimientos-logos');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (logosContainer) {
-            logosContainer.classList.add('start');
-          }
-          observer.unobserve(logosContainer);
+          entry.target.classList.add('start');
+          observer.unobserve(entry.target);
         }
       });
     });
-    observer.observe(logosContainer);
 
-    const logos = Array.from(logosContainer.children);
+    logosContainers.forEach((container) => observer.observe(container));
 
-    logos.forEach((logo) => {
-      const duplicatedLogo = logo.cloneNode(true);
-      duplicatedLogo.setAttribute('aria-hidden', true);
-      logosContainer.appendChild(duplicatedLogo);
-    });
+    return () => {
+      logosContainers.forEach((container) => observer.unobserve(container));
+    }
   }, []);
 
   return (
-    <section className="agradecimientos-section bg-neutral/95 flex basis-full flex-wrap justify-center px-3 py-[8%] gap-8">
+    <section className="agradecimientos-section bg-neutral/95 flex basis-full flex-wrap justify-center px-3 py-[16%] gap-8">
       <article className="agradecimientos-content gap-6 flex flex-wrap justify-center">
         <h1 className="agradecimientos-headline headline text-secondary text-3xl font-helveticaNeue font-light">
           AGRADECIMIENTOS
@@ -45,12 +44,14 @@ const Agradecimientos = () => {
         </p>
       </article>
       <div className="agradecimientos-wrapper w-full bg-secondary/40">
-        <section className="agradecimientos-logos flex justify-start h-fit w-full">
-          {Object.keys(images).map((key, index) => (
-            <img key={index} src={images[key]} alt={key} className="agradecimientos-logo" />
-          )
-          )}
-        </section>
+        {sections.map((section, sectionIndex) => (
+          <section key={sectionIndex} className="agradecimientos-logos flex justify-start h-fit w-full ml-30">
+            {section.map((key, index) => (
+              <img key={index} src={images[key]} alt={key} className="agradecimientos-logo mx-4" />
+            )
+            )}
+          </section>
+        ))}
       </div>
     </section>
   );

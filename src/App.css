@@ -46,10 +46,10 @@
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 
     .agradecimientos-logos {
-      animation: infinite-scroll-animation 60s linear infinite paused;
+      animation: infinite-scroll-animation 60s linear infinite alternate paused;
 
       > * {
-        max-width: 4rem;
+        max-width: 3rem;
       }
     }
 
@@ -65,7 +65,7 @@
   }
 
   to {
-    transform: translateX(calc(-50% - (80px * 23)));
+    transform: translateX(calc(-80px * 23));
   }
 }
 
@@ -227,6 +227,7 @@
 
   .agradecimientos-section {
     gap: 4rem;
+    padding-block: 8%;
 
     .agradecimientos-wrapper {
       .agradecimientos-logos {
