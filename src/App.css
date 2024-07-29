@@ -38,6 +38,14 @@
   width: 100vw;
 }
 
+.nosotros-bg {
+  margin-top: 430px;
+}
+
+.nosotros-section {
+  height: 1200px
+}
+
 .agradecimientos-section {
   overflow: hidden;
 
@@ -158,6 +166,14 @@
     }
   }
 
+  .nosotros-section {
+    height: 800px;
+
+    .nosotros-bg {
+      margin-top: unset;
+    }
+  }
+
   .header-container {
     padding-left: 120px;
     padding-right: 120px;
@@ -194,7 +210,7 @@
   }
 
   .nosotros-content {
-    width: 50%;
+    width: 60%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -288,7 +304,6 @@
   }
 
   .divider-section {
-    height: 4rem;
 
     .divider-text {
       font-size: 1.25rem;

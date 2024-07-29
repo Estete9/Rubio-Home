@@ -31,9 +31,9 @@ function App() {
         </header>
         <main className="">
           <Hero isMobile={isMobile} />
-          <Divider quote='"Decididos al trabajo con excelencia con eficacia y amor"' />
+          <Divider quote='"Calidad y servicio profesional desde 1961"' />
           <Servicios isMobile={isMobile} />
-          <Divider quote="'Decididos al trabajo con excelencia'" />
+          <Divider quote="'Por más de seis decadas somos poseedores de esta inigualable herencia, alimentada con nuestros propios sueños y el esfuerzo de quienes continúan'" />
           <Nosotros isMobile={isMobile} />
           <Agradecimientos />
         </main>
