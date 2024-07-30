@@ -25,7 +25,7 @@ const Agradecimientos = () => {
 
   return (
     <section className="agradecimientos-section bg-neutral/95 flex basis-full flex-wrap justify-center px-3 py-[16%] gap-8">
-      <article className="agradecimientos-content gap-6 flex flex-wrap justify-center">
+      <article className="agradecimientos-content gap-6 flex flex-wrap justify-center mb-16">
         <h1 className="agradecimientos-headline headline text-secondary text-3xl font-helveticaNeue font-light">
           AGRADECIMIENTOS
         </h1>
