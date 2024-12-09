@@ -27,7 +27,7 @@ const DesktopFooter = ({ scrollTop }) => (
           </div>
           <div className="footer-contact-info">
             <img src={phone} alt="telephone icon" className="footer-icon" />
-            <p className="font-helveticaNeue font-light">0985722115 - 02240047</p>
+            <p className="font-helveticaNeue font-light">0985722115 - 022410047</p>
           </div>
           <div className="footer-contact-info">
             <img src={email} alt="email icon" className="footer-icon" />

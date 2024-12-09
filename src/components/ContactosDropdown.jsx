@@ -26,7 +26,7 @@ const ContactosDropdown = ({ isMobile, isContactosOpen }) => {
       <li>
         <img src={phone} alt="telephone icon" className="contactos-icon" />
         <p className="contact-text font-helveticaNeue font-light">
-          0985722115 - 02240047
+          0985722115 - 022410047
         </p>
       </li>
       <li>

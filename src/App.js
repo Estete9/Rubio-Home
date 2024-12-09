@@ -12,14 +12,13 @@ import DesktopFooter from './components/DesktopFooter';
 
 function App() {
   document.body.classList.add(
-    'debug-screens',
     'bg-[url(./assets/mobile/bg-img-mobile.png)]',
     'bg-no-repeat',
     'bg-cover',
     'bg-fixed',
   );
 
-  const [isMobile] = useState(window.innerWidth < 400);
+  const [isMobile] = useState(window.innerWidth < 480);
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -33,7 +32,7 @@ function App() {
           <Hero isMobile={isMobile} />
           <Divider quote='"Calidad y servicio profesional desde 1961"' />
           <Servicios isMobile={isMobile} />
-          <Divider quote="'Por más de seis decadas somos poseedores de esta inigualable herencia, alimentada con nuestros propios sueños y el esfuerzo de quienes continúan'" />
+          <Divider quote="'Por más de seis décadas somos poseedores de esta inigualable herencia, alimentada con nuestros propios sueños y el esfuerzo de quienes continúan'" />
           <Nosotros isMobile={isMobile} />
           <Agradecimientos />
         </main>

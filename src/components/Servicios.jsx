@@ -5,7 +5,7 @@ import bullet from '../assets/icons/bullet.svg';
 
 const services = [
   'Instalación de ACM',
-  'Rótulos con iluminación LED',
+  'Rótulos con iluminación LEED',
   'Fotomurales',
   'Estructuras',
   'Vallas Publicitarias',

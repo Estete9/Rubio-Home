@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import PropTypes from 'prop-types';
 import bgNosotrosMobile from '../assets/mobile/nosotros-img-mobile.png';
 import bgNosotrosDesktop from '../assets/desktop/nosotros-img-1920.png';
@@ -19,7 +20,7 @@ const Nosotros = ({ isMobile }) => (
         NOSOTROS
       </h1>
       <p className="nosotros-text text-secondary font-helveticaNeue font-light text-sm">
-        Jorge Isaac Rubio Apraez, nació en 1937. Fue el primer hijo del reconocido poeta Nicolás
+        Jorge Isaac Rubio Apráez, nació en 1937. Fue el primer hijo del reconocido poeta Nicolás
         Rubio Vásquez y Ana Apráez Ordeñana. Realizó sus estudios en la Escuela de Bellas Artes.
         <br />
         <br />
@@ -27,21 +28,21 @@ const Nosotros = ({ isMobile }) => (
         continuo y arduo trabajo como diseñador, artista y publicista de Jorge Rubio Apráez se
         cristalizaron en un emprendimiento estructurado y en la creación de una organización “Rubio
         y Asociados Cia. Ltda”. En sus inicios “Jorge Rubio Taller de Publicidad”, creó formas, uso
-        de materiales nuevos, diseños tanto en rotulación comercial como en la parte artística.
+        de materiales nuevos, diseños tanto en rotulación comercial como en el área artística.
         <br />
         <br />
-        La experiencia del señor Jorge Rubio Apráez como artista, diseñador y publicista galardonado
-        con premios nacionales e internacionales es la base monolítica de RUBIO Y ASOCIADOS.
+        La experiencia del señor Jorge Rubio Apráez como artista, diseñador y publicista, galardonado
+        con premios nacionales e internacionales, es la base monolítica de RUBIO Y ASOCIADOS.
         <br />
         <br />
-        Jorge Rubio A. destacado deportista, ha sido galardonado por sus logros en el deporte del
-        billar, llegando a ser campeón a nivel nacional e internacional (campeón del Circuito
-        Mundial de Billar, Club Delicias-Méjico, entre otros). Campeón en el ámbito del futbol
-        también. Entre sus vocaciones está la entrega por la defensa de la vida, tanto humana como
-        animal (1er puesto al Afiche por el Día Mundial del Agua - Unesco-Fao)
+        Jorge Rubio A. destacado deportista, ha sido galardonado por sus logros en el deporte del billar,
+        llegando a ser campeón a nivel nacional e internacional (campeón del Circuito Mundial de Billar,
+        Club Delicias-México, entre otros). Campeón en el ámbito del futbol. Entre sus vocaciones está la
+        entrega por la defensa de la vida, tanto humana como animal (1er puesto al Afiche por el Día
+        Mundial del Agua - Unesco-Fao)
       </p>
       <section className="nosotros-btns flex gap-3 justify-center">
-        <a
+        {/* <a
           className="nosotros-btn bg-primary text-neutral font-helveticaNeue text-xs min-w-28 h-8 max-w-44 rounded-md flex items-center justify-center gap-1"
           href={presentacion}
           target="_blank"
@@ -49,12 +50,13 @@ const Nosotros = ({ isMobile }) => (
         >
           <img src={download} alt="download icon" className=" h-5" />
           <p className="nosotros-btn-text font-light">Biografía</p>
-        </a>
+        </a> */}
         <a
           className="nosotros-btn bg-primary text-neutral font-helveticaNeue text-xs min-w-28 max-w-44 h-8 rounded-md flex items-center justify-center gap-1"
           href={presentacion}
           target="_blank"
           rel="noreferrer"
+          download
         >
           <img src={download} alt="download icon" className="h-5" />
           <p className="nosotros-btn-text font-light">Presentación</p>

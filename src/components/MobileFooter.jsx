@@ -35,7 +35,7 @@ const MobileFooter = ({ scrollTop }) => (
         </li>
         <li>
           <img src={phone} alt="telephone icon" className="footer-icon" />
-          <p className="font-helveticaNeue font-light">0985722115 - 02240047</p>
+          <p className="font-helveticaNeue font-light">0985722115 - 022410047</p>
         </li>
         <li>
           <img src={email} alt="email icon" className="footer-icon" />
